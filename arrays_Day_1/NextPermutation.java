@@ -25,6 +25,12 @@ public class NextPermutation {
 			}
 		}
 		
+		/* edge case
+		 if(ind == -1){
+		 	reverse whole array and return it
+		 }
+		 */
+		
 		// Find the value greater than break point but the smallest one
 		for(int i=n-1;i>ind;i--) {
 			if(arr.get(i) > arr.get(ind)) {
